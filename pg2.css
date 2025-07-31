@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+.sec-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  gap: 80px;
+  padding-top: 40px;
+  padding-bottom: 60px; 
+  background: url('main-ig/bg2.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.signin {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
+
+.form-btns a{
+  text-decoration: none;
+  color: white;
+}
+.signin:hover {
+  background-color: #8b0000;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #8b0000;
+}
+
+.signin a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hidden form wrapper */
+.form-wrapper {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+/* Show class toggled by JS */
+.form-wrapper.show {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  opacity: 1;
+}
+
+/* Form and fieldset styling */
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #8b0000;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Submit & Reset buttons */
+.form-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #8b0000;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #a10000;
+}
+
+.sec-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-color: blanchedalmond;
+}
+.sec2-h{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#cc{
+  font-size: 64px;
+}
+
+.gd{
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.prch{
+  padding: 32px ;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff4e6;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+
+.txt {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+
+.bn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffb84d;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+
+.card:hover .bn {
+  background-color: #ff9900;
+  color: white;
+}
+
+.titan-explain-grid {
+  background-color: blanchedalmond;
+  padding: 32px 40px;
+  text-align: center;
+ 
+}
+
+.titan-heading {
+  font-size: 2.5rem;
+  color: #2f1b0c;
+  text-shadow: 1px 1px 2px #bbb;
+}
+
+.titan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px;
+  justify-items: center;
+  padding: 32px;
+}
+
+.titan-card {
+  background-color: #fff9ef;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.titan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.titan-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.titan-name {
+  font-size: 1.5rem;
+  color: #3a1f0f;
+  margin-top: 16px;
+}
+
+.titan-desc {
+  font-size: 1rem;
+  color: #5a4332;
+  padding: 0 16px 20px;
+  line-height: 1.6;
+}
+
+.form {
+  background-color: blanchedalmond;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #442c1d;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.regiment-form {
+  background-color: #fffaf0;
+  border-radius: 16px;
+  padding: 25px 20px;
+ 
+  max-width: 350px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reg-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.regiment-form h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: #5b3924;
+}
+
+.regiment-form form input,
+.regiment-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.regiment-form button {
+  background-color: #a55233;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.regiment-form button:hover {
+  background-color: #d8643a;
+}
+
+.nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border: 1px solid black;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.nav a:hover {
+  background:rgb(196, 117, 57);
+}
+
+.sec-6{
+  height: 80px;
+  width: 100%;
+
+  background-color: blanchedalmond;
+
+}

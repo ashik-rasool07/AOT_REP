@@ -1,0 +1,46 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 221, 171);
+  display: flex;
+  justify-content: center; 
+  align-items: center;     /* center vertically */
+   background: url('main-ig/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.center-img {
+  text-align: center;
+  margin-bottom: 100px;
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bn {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.bn:hover {
+  background-color: #8b0000; /* Dark red (blood theme) */
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #8b0000;
+}
+
+
